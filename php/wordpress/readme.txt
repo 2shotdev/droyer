@@ -1,1 +1,1 @@
-These sample files have been taken from multiple projects that I ahve worked on.
+These sample files have been taken from multiple projects that I have worked on.
