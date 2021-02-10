@@ -1,0 +1,124 @@
+/*
+Theme Name:     Newspaper Child theme
+Theme URI: 		http://themeforest.net/user/tagDiv/portfolio
+Description:    Child theme made by tagDiv
+Author:         tagDiv
+Author URI: 	http://themeforest.net/user/tagDiv/portfolio
+Template:       Newspaper
+Version:        1.008
+*/
+
+
+/*  ----------------------------------------------------------------------------
+    This file will load automatically when the child theme is active. You can use it
+    for custom CSS.
+*/
+body {
+  visibility: visible;
+}
+.max-700{width:100%;max-width:748px;margin:0 auto;}
+.max-60{max-height:60px;}
+.ad-hide{display:none;}.f14{font-size:14px;}
+.disclaimertext{color:#fff;margin-bottom:10px;}
+.disclaimertext a {color:#fff;}
+.hide-overflow{overflow:hidden;}
+.mt-category-data .td-module-meta-info{margin-top: -75px;background-color: #fff;width: 90% !important;padding: 5% !important;margin-left: 5% !important;}
+/* CTA Styling Modifications*/
+.cta-btn, .cta-btn-wrap {
+    display: none;
+    transition: 0.7s ease all;
+    vertical-align:top;
+}
+#mobile-float {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    display: flex;
+    padding: 0 6px 10px 6px;
+    bottom: 0;
+    margin-bottom: 0;
+    flex-flow: row wrap;    
+}
+#mobile-float .cta-btn {
+    margin: 0 auto;
+    padding:7px 0;
+}
+#mobile-float.sponsored {
+    background: rgba(255,255,255,1);
+}
+/* CTA Edits */
+.cta-btn-wrap .cta-btn.mobile-float-only {
+    display: none !important;
+}
+.cta-image {
+    display:inline-block;
+    max-width:110px;
+}
+.cta-image > img {
+    margin:0;
+    width:100px;
+    height:auto;
+    max-width:initial;
+}
+.cta-text {
+    display:block;
+    padding:0 20px 0 5px;
+    line-height:21px;
+}
+.cta-imagefull {
+    display:block;
+    width:100%;
+    clear:both;
+}
+.cta-imagefull > img {
+    margin:0;
+    width:100%;
+    max-width:initial;
+    clear:both;
+}
+.cta-textfull {
+    display:inline-block;
+    padding:8px 10px 8px 0;
+    line-height:21px;
+    clear:both;
+}
+i.arrow.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+i.arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 7px;
+    float: right;
+    margin-right: 12px;
+    margin-top: 2px;
+    position:absolute;
+    right:0px;
+}
+label.sponsored {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+    padding: 2px 0;
+}
+/* Disclaimer */
+.disclaimer .disclaimertext ul, .disclaimer .disclaimertext ol, .disclaimer .disclaimertext li{margin-bottom:0px !important;}
+/* Popup */
+.soft-popup-wrapper{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.7);text-align:center;z-index:9999;}
+.soft-popup-wrapper>.soft-popup{position:relative;width:100%;margin:18% auto 0;max-width:700px;}
+.soft-popup-wrapper>.soft-popup>a>img{width:100%;}
+.soft-popup-wrapper>.soft-popup>.exit{cursor:pointer;position:absolute;top:-20px;right:-20px;width:35px;height:35px;line-height:36px;font-size:22px;color:#fff;background-color:#000;border-radius:50%;font-weight:700;}
+/* Mobile Changes */
+@media (max-width:766px) {
+    .cta-btn {width:100% !important;display:flex!important;max-width: initial!important;}
+    .cta-btn.ctafull{width:100% !important;display:block!important;max-width: initial!important;}
+}
+@media (max-width:622px) {
+    .cta-btn {
+        flex: 1 0 100%;
+        padding:10px 0;
+    }
+    .mt-inline li{display:inline-block !important;float:none !important;clear:both;}
+}
